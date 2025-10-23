@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body{
+    background:#EDEFF2FF;
+    padding-bottom:40px;
+}
+.navbar {
+  background: linear-gradient(#627A97FF ,#4C6078FF )!important;
+}
+.navbar-brand,.navbar-brand:hover {
+  font-family: "MonteCarlo", cursive;
+  background: linear-gradient(to right, #edbc59, #ece9e3, #edbc59, #ece9e3);
+  background-clip: text;
+  font-size: 30px !important ;
+  color: transparent;
+  font-weight: 900;
+  font-style: italic;
+}
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.btn-search ,.content button {
+      font-weight:900;
+      border:solid 1px  #4A3102FF;
+       font-size: 23px;
+        color:#484848FF !important;
+}
+
+.content .icon:hover{
+    color:red;
+    cursor:pointer
+}
+.content button ,.content3 button{
+     font-size: 14px;
+      background:rgba(237, 180, 67, .7);
+       font-weight:700;
+}
+.logout{
+    outline-:none;
+    border:0;
+    padding: 6px 19px;
+}
+.navbar .btn ,.btn-search ,.register ,.login ,.logout{
+  font-size: 15px;
+  padding: 6px 15px;
+  background:rgba(237, 180, 67, .7);
+  color:#F8ECD5FF ;
+  font-weight:700;
+  /* border-radius:13px */
+}
+.register,.login{
+     border:solid .8px #996504FF ;
+     font-size:17px;
+     color:black
+
+}
+.btn-search:hover ,.btn-search ,.register:hover ,.login:hover{
+     background:rgba(237, 180, 67, .7);
+}
+.navbar .btn:hover ,.logout:hover{
+     background:none;
+  color:#F8ECD5FF ;
+  border:solid 2px rgba(237, 180, 67, .7);
+}
+select {
+  border: 0.3px solid gray;
+  font-size: 14px;
+  padding: 4px;
+}
+select option:hover{
+    background:#4C6078FF !important;
+}
+input:focus {
+  outline: none;
+  border: solid 0.3px black !important;
+}
+.btn-search button {
+  padding: 5px 37px !important ;
+}
+.container2,
+.favourites {
+  width: 71%;
+  margin: auto;
+  column-gap:29px
+
+}
+@media(max-width:1200px){
+  .favourites {
+    width: 90%;
+  }
+}
+
+.favourites {
+  width: 86%;
+  margin: auto;
+  column-gap:23px
+
+}
+
+.content ,.content3,.contentFav{
+  box-shadow:6px 6px 11px gray
+}
+.contentFav{
+   width: 23%;
+}
+.content img {
+  height: 240px;
+  width: 100%;
+}
+.content h6 ,.content3 h6 ,.contentFav h6{
+    font-size:14px;
+    white-space:nowrap;
+    font-weight:900
+}
+.content p ,.content3 p ,.contentFav p{
+    font-size:14px;
+    white-space:nowrap;
+    font-weight:600
+}
+.userinfo {
+  display: none;
+}
+.shoppingCart {
+  position: relative;
+}
+.products {
+  position: absolute;
+  /* left: 80%; */
+  top: 250%;
+  display: none;
+  background:#D7DDE7FF
+}
+@media(max-width:1024px){
+  .products{
+    left: -200%;
+  }
+}
+@media(max-width:700px){
+  .products{
+    left: -400%;
+  }
+}
+.products.active {
+  display: block;
+}
+.dec,.increment{
+width:22px;
+height:22px;
+background:white;
+text-align:center;
+display:align-block;
+font-size:10px;
+font-weight:800;
+cursor:pointer
+
+
+}
+.form-control:focus{
+     border:none !important; 
+     outline:none !important
+}
+label{
+    font-weight:700
+}
+
+#username{
+    color:white;
+    font-size:16px
+}
+.cart{
+    font-size:23px;
+    color:#F8BA47FF ;
+    cursor:pointer
+}
+#count ,.coun{
+position:absolute;
+top:-60%;
+right:-100%;
+background:#EC4946FF;
+width:22px;
+height:22px;
+color:white;
+border-radius:50%;
+text-align:center;
+ font-size:13px
+}
+.content2{
+    width:40%
+}
+.totalprice{
+  font-size:30px
+}
+
+@media (max-width:700px){
+  #username ,.usernam{
+    font-size:13px
+  }
+  .cart{
+    font-size:17px
+  }
+  /* .coun{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    font-size:10px;
+    
+  } */
+  .logout{
+     font-size:11px;
+     padding:6px 10px
+  }
+  .navbar-brand{
+    font-size:24px !important;
+  }
+  .navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+}
+@media (max-width:576px){
+  #username ,.usernam{
+    font-size:10px
+  }
+  .cart{
+    font-size:14px
+  }
+  .logout{
+     font-size:11px;
+     padding:6px 6px
+  }
+  .navbar-brand{
+    font-size:17px !important;
+  }
+  .navbar-brand img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.btn-search{
+  padding:4px 10px
+}
+}
+
+
+
+
+@media(max-width:767px){
+  .totalprice{
+    font-size:20px
+  }
+}
+
+@media(max-width:430px){
+
+  .removeBtn{
+    font-size:10px;
+    padding:5px 6px !important;
+    white-space:nowrap
+  }
+}
+@media(max-width:930px){
+  .favourites{
+    justify-content:center !important;
+
+  }
+  .contentFav{
+    margin-top:13px !important
+  }
+}
+@media(max-width:600px){
+  #login ,#register  {
+    padding:5px 9px;
+    font-size:10px;
+    /* margin-left:10px */
+  }
+}
+.Favourite-items{
+display:inline-block;
+  margin:auto;
+  margin-left:50%;
+  transform:translatex(-50%);
+  font-weight:900;
+  font-size:30px;
+  border-bottom:solid 4px #FEAA0DFF
+}
+@media(max-width:600px){
+  .Favourite-items {
+   white-space:nowrap;
+    font-size:22px;
+    
+  }
+}
+.container3{
+  width:80%;
+  margin:auto;
+  gap:33px;
+  justify-content:center
+}
+.container2{
+  width:80%
+}
+.container4{
+  width:92%;
+  margin:auto;
+ 
+}
+.addedTocard {
+  width:100%;
+  gap:30px
+}
+.content3{
+flex:0 0 1
+}
+.content{
+  width:31%;
+}
+@media(max-width:1200px){
+  .container3  {
+   width:90%;
+    
+  }
+}
+@media(max-width:380px){
+  .container4 {
+   width:100%;
+   margin:0
+    
+  }
+  .content3 h6{
+    white-space:wrap
+  }
+}
+@media(max-width:1050px){
+  .content{
+  width:29%;
+}
+}
+@media(max-width:945px){
+   .container3 {
+   gap:50px
+    
+  }
+  .content{
+  width:39%;
+}
+}
+@media(max-width:706px){
+   .container3 {
+   gap:50px;
+   width:95%;
+justify-content:space-evenly
+    
+  }
+  .content{
+  width:41%;
+}
+}
+@media(max-width:600px){
+   .container3 {
+   width:95%;
+
+    
+  }
+  .content{
+  width:60%;
+}
+}
+@media(max-width:473px){
+   .container3 {
+   width:95%;
+
+    
+  }
+  .content{
+  width:79%;
+}
+}
+
+@media(max-width:980px){
+  .favourites{
+    gap:30px
+  }
+ .contentFav{
+  width:29%
+ }
+}
+@media(max-width:767px){
+  .favourites{
+    gap:50px
+  }
+ .contentFav{
+  width:40%
+ }
+}
+@media(max-width:590px){
+ .contentFav{
+  width:60%
+ }
+}
+@media(max-width:400px){
+ .contentFav{
+  width:80%
+ }
+}
