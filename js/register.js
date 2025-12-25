@@ -24,3 +24,6 @@ form.addEventListener('submit', function (e) {
     alert('Fill all inputs')
   }
 });
+
+
+
