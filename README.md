@@ -9,7 +9,7 @@ This project uses *LocalStorage* to store user information, cart items, and favo
 ---
 
 ## Live Demo
-[🔗 Live Demo](https://asmaamohamed2000.github.io/project4/)  
+[🔗 Live Demo](https://asmaamohamed2000.github.io/home-style-Js-project/)  
 
 ## Features
 
